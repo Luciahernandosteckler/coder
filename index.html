@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="indumentaria de moda, ropa linda y de calidad para mujeres, ventas minoristas">
+  <meta name="keywords"
+    content="ropa, moda, indumentaria, mujer, jeans, sueter, camperas, venta minorista, venta de indumentaria, comercios de ropa de mujer, comercio de ropa, tienda, tiendaonline">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="shortcut icon" href="./assets/ico.webp" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./Css/estilo.css">
+  <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon">
+  <title>Millennium Propiedades</title>
+</head>
+
+<body>
+  <header>
+
+    <!-- Navegador -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+
+      <div class="navbar-nav">
+        <div class="logo-container"><img src="./assets/logo.png" alt="logo"> </div>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="./Pages/Quienessomos.html">Quienes somos</a>
+          <a class="nav-link" href="./Pages/Nuestraspropiedades.html">Nuestras propiedades</a>
+        </div>    
+       </div>
+      </div>
+
+      <div class="flex-container">
+
+        <!-- Agrego el botón para llamar a la función pedirDatos() -->
+        <button class="consultar-btn" onclick="pedirDatos()">Consultar Propiedad</button>
+       
+        <!--Calcular valor a dolar actual en Argentina-->
+        <button class="calcular" onclick="calcular()">Calcular Valor a dolar actual</button>
+      </div>
+
+    </nav>
+
+    <!--Fin de Navegador-->
+
+  </header>
+
+  <!--Contenido Principal-->
+
+  <h1 class="encabezado">Millennium propiedades</h1>
+
+  <p class="encabezado"> <span class="titulo">Bienes </span> raices </p>
+
+  <h2 class="slogan"> En la busqueda permanente del mejor negocio para usted.</h2>
+
+  <div class="image-container">
+    <div class="collage-container">
+  
+      <div class="collage-item poso">
+        <img src="Assets/alposo.jpg"  class="prope"  alt="Departamento al poso">
+        <div class="shadow-text">
+          <p>1 Departamentos al poso</p>
+        </div>
+      </div>
+  
+      <div class="collage-item chalet">
+        <img src="Assets/chalet.jpg" class="prope" alt="Chalet">
+        <div class="shadow-text">
+          <p>2 Chalet zona céntrica</p>
+        </div>
+      </div>
+  
+      <div class="collage-item mono">
+        <img src="Assets/monoambiente.jpg"  class="prope" alt="Monoambiente">
+        <div class="shadow-text">
+          <p>3 Monoambiente amueblado</p>
+        </div>
+      </div>
+  
+      <div class="collage-item casa">
+        <img src="Assets/casa.jpg" class="prope" alt="Casa">
+        <div class="shadow-text">
+          <p>4 Casa en villa floresta</p>
+          <a href="./Pages/Nuestraspropiedades.html">Mas información</a>
+        </div>
+      </div>
+  
+      <div class="collage-item ancha">
+        <img src="Assets/local.jpg" class="prope" alt="Local">
+        <div class="shadow-text">
+          <p>5 Local céntrico</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  <footer> </footer>
+
+  <script src="./js/home.js"> </script>
+
+  <script src="/js/bootstrap.min.js"> </script>
+
+</body>
+
+</html>

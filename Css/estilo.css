@@ -1,0 +1,220 @@
+html {
+  font-size: 62.5%;
+  /* 62.5% representa un 10px, 1em = 10px */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+  
+  /*navegador general*/
+  .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+   
+  }
+
+  .logo-container {
+    display: inline-block;
+    width: 8rem;
+    margin-top: 5px;
+   
+  }
+  .logo-container img {
+    width: 100%;
+    height: auto;
+   
+  }
+
+
+.encabezado { 
+   font-size: 2rem; 
+   text-align: center;
+   color:white;
+   margin-top: 1%;
+ }
+
+.titulo { color:rgb(104, 4, 4);
+  font-size: 2rem;
+  }
+
+.slogan {
+  text-align: center;
+  font-size: 1.3rem;
+  color:white;
+ 
+}
+.collage-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1px; /* Espacio entre las imágenes */
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.collage-item {
+  position: relative;
+  width: 250px; /* Ancho fijo para cada imagen */
+  height: 300px; /* Altura fija para cada imagen */
+  overflow: hidden;
+}
+
+.prope {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.prope:hover {
+  transform: scale(1.1);
+}
+
+.shadow-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 1rem; /* Ajustar el padding para que el texto no ocupe demasiado espacio */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fee9e9;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center; /* Centrar el texto horizontalmente */
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.collage-item:hover .shadow-text {
+  opacity: 1;
+}
+
+
+
+/* Estilos para el botÃ³n de consulta */
+.consultar-btn {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.consultar-btn:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para el contenedor flexible */
+.flex-container {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  gap: 10px; /* Espacio entre los elementos */
+  margin-bottom: 1%; /* Espacio superior para separar del encabezado */
+  margin-left: 40%; /* SeparaciÃ³n del borde derecho de la pÃ¡gina */
+}
+
+
+body 
+{background-color: rgb(15, 10, 10);}
+
+
+.ancha { width: 550px;}
+.poso{ width: fit-content;}
+.chalet{width: max-content;}
+.mono{ width: max-content;}
+.casa{width: 600px ;}
+
+.texto { color:white; font-size: 2rem;width:40%;}
+
+
+.contenido {
+  display: flex;
+  gap: 25px; /* Espacio entre la imagen y el texto */
+  margin-top: 20px; /* Espacio superior para separar del encabezado */
+}
+
+.imagen img {
+  width: 500px; /* Ancho de la imagen */
+  height: 500px /* Ajuste automático de la altura para mantener la proporción */
+}
+
+.texto p {
+  font-size: 2.2rem; /* Tamaño de fuente del texto */
+  line-height: 1; /* Espaciado entre líneas del texto */
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  margin-top: 1%;
+}
+
+
+
+/*Quienes somos*/
+
+.somos {
+ margin-left: 30%;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: min-content;
+  height: auto;
+  font-size: 1rem;
+  padding-left: 2%;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.start {
+  padding-top: 2%;
+  margin-left: 4%;
+  color: white;
+  text-align: start;
+}
+
+input,
+textarea {
+  border-radius: 1rem;
+  padding: 0.8rem;
+  border: 1px solid;
+  color: black;
+  width: 150%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(174, 33, 1);
+}
+
+.button-enviar {
+  margin-top: 10px;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: rgb(172, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.button-enviar:hover {
+  background-color: rgb(95, 4, 19);
+}
