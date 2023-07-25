@@ -1,20 +1,17 @@
 <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="indumentaria de moda, ropa linda y de calidad para mujeres, ventas minoristas">
-  <meta name="keywords"
-    content="ropa, moda, indumentaria, mujer, jeans, sueter, camperas, venta minorista, venta de indumentaria, comercios de ropa de mujer, comercio de ropa, tienda, tiendaonline">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="shortcut icon" href="./assets/ico.webp" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../Css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="../Css/estilo.css">
-  <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon">
-  <title>Millennium Propiedades</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="shortcut icon" href="./assets/ico.webp" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="../Css/estilo.css">
+<link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon">
+<title>Millennium Propiedades</title>
 </head>
 
 <body>
@@ -27,13 +24,19 @@
       <div class="navbar-nav">
         <div class="logo-container"><img src="../Assets/logo.png" alt="logo"> </div>
 
+        <!-- Agrego el botón de hamburguesa para dispositivos pequeños -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
           <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           <a class="nav-link" href="./Quienessomos.html">Quienes somos</a>
           <a class="nav-link" href="./Nuestraspropiedades.html">Nuestras propiedades</a>
-        </div>    
-       </div>
+        </div>
+      </div>
       </div>
 
 
@@ -57,28 +60,29 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
+        
         <!-- Contenido de la primera columna -->
 
 
-  <form class="cont" action="" method="post">
-    <div class="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-    </div>
-    <div class="formulario">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="formulario">
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena">
-    </div>
-    <div class="formulario">
-        <label for="mensaje">Deja tu mensaje:</label>
-        <textarea id="mensaje" name="mensaje"></textarea>
-    </div>
-    <input type="submit" value="Enviar formulario" class="button-enviar" onclick="mostrarMensaje()">
-</form>
+        <form class="cont" action="" method="post">
+          <div class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="formulario">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="formulario">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+          </div>
+          <div class="formulario">
+            <label for="mensaje">Deja tu mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <input type="submit" value="Enviar formulario" class="button-enviar" onclick="mostrarMensaje()">
+        </form>
 
 
       </div>
@@ -89,9 +93,10 @@
     </div>
   </div>
 
-  
-  <footer> </footer>
-<script src="../js/quienessomos.js"></script>
+
+  <footer> banner </footer>
+
+  <script src="../js/quienessomos.js"></script>
   <script src="../js/bootstrap.min.js"> </script>
 
 </body>
