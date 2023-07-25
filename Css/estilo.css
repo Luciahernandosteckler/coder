@@ -4,12 +4,15 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
-  
+ 
   /*navegador general*/
   .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
-    font-size: 1.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     color: white;
    
   }
@@ -17,16 +20,10 @@ html {
   .logo-container {
     display: flex;
     align-items: center;
-    width: 7rem;
-    margin-top: 5px;
+    width: 8%;;
    
   }
-  .logo-container img {
-    width: 100%;
-    height: auto;
-   
-  }
-  
+
 
 .encabezado { 
    font-size: 2rem; 
@@ -102,27 +99,30 @@ html {
 
 /* Estilos para el botonn de consulta */
 
-.consultar-btn {
+.consultar-btn, 
+.calcular {
   background-color: #f5f5f5;
-  color: #333;
-  padding: 10px 15px;
+  color: #3e0202;
+  padding: 2px 9px;
   border: none;
-  border-radius: 5px;
+  border-radius: 90px;
   cursor: pointer;
-}
+  margin-right: 5px;
 
+  
+}
+.calcular-btn:hover{ background:#5f1212;}
 .consultar-btn:hover {
-  background-color: #ddd;
+  background-color: #930d0d;
 }
 
 /* Estilos para el contenedor flexible */
 
 .flex-container {
-  display: flex;
-  justify-content: flex-end; 
-  gap: 10px; 
-  margin-bottom: 1%; 
-  margin-left: 40%; 
+  display:flex;
+  margin-top: 3%; 
+ 
+   
 }
 
 
@@ -193,23 +193,23 @@ body
 
 label {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .start {
   padding-top: 2%;
-  margin-left: 4%;
+  margin-left: 5%;
   color: white;
   text-align: start;
 }
 
 input,
 textarea {
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   padding: 0.8rem;
   border: 1px solid;
   color: black;
-  width: 150%;
+  width: 180%;
 }
 
 input:focus,
@@ -219,7 +219,7 @@ textarea:focus {
 }
 
 .button-enviar {
-  margin-top: 10px;
+  margin-top: 19px;
   border-radius: 1rem;
   padding: 0.5rem;
   color: rgb(172, 0, 0);
@@ -257,7 +257,7 @@ textarea:focus {
     margin-top:-48%;
     
   }
-
+  .logo-container { width:60px;}
   .start {margin-right: 2%;}
   .imagen,
   .texto {

@@ -16,35 +16,34 @@
 
 <body>
   <header>
-
     <!-- Navegador -->
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-
-      <div class="navbar-nav">
-        <div class="logo-container"><img src="../Assets/logo.png" alt="logo"> </div>
-
-        <!-- Agrego el botón de hamburguesa para dispositivos pequeños -->
+      <div class="container">
+        <!--  botón de hamburguesa para dispositivos pequeños -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- Logo y enlaces de navegación -->
+        <div class="navbar-nav justify-content-between align-items-center">
+          <div class="logo-container">
+            <img src="../Assets/logo.png" alt="logo" class="img-fluid">
+            <!--  clase "img-fluid" de Bootstrap para que el logo se ajuste automáticamente -->
+          </div>
 
-          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          <a class="nav-link" href="./Quienessomos.html">Quienes somos</a>
-          <a class="nav-link" href="./Nuestraspropiedades.html">Nuestras propiedades</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link" href="./Quienessomos.html">Quienes somos</a>
+              <a class="nav-link" href="./Nuestraspropiedades.html">Nuestras propiedades</a>
+            </div>
+          </div>
+
         </div>
       </div>
-      </div>
-
-
-
     </nav>
-
     <!--Fin de Navegador-->
-
   </header>
 
   <!--Contenido Principal-->
@@ -60,7 +59,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        
+
         <!-- Contenido de la primera columna -->
 
 
