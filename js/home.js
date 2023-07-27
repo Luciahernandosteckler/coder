@@ -1,3 +1,80 @@
+let propiedad = [
+  {
+    nombre: "Departamento al pozo",
+    ubicacion: "Vte Lopez al 1200",
+    descripcion: "Cinco ambientes en 100mt2 cubiertos.",
+    valor: 85000,
+  },
+  {
+    nombre: "Chalet ubicado en el centro de la ciudad",
+    ubicacion: "Centro",
+    descripcion: "120mt2 cubiertos.",
+    valor: 120000,
+  },
+  {
+    nombre: "Monoambiente totalmente amueblado",
+    ubicacion: "Mariano Moreno",
+    descripcion: "Zona Mariano moreno.",
+    valor: 89000,
+  },
+  {
+    nombre: "Casa Ubicada en barrio villa floresta",
+    ubicacion: "Villa Floresta",
+    descripcion: "40mt2.",
+    valor: 70000,
+  },
+  {
+    nombre: "Local centrico, excelente punto de la ciudad",
+    ubicacion: "Centro",
+    descripcion: "40mt2.",
+    valor: 35000,
+  },
+];
+
+function pedirDatos() {
+  let numeroPropiedad = parseInt(prompt("Ingrese el número de la propiedad que desea consultar"));
+
+  // Verificar si el número de propiedad ingresado es válido
+
+  if (numeroPropiedad >= 1 && numeroPropiedad <= propiedad.length) {
+    let propiedadSeleccionada = propiedad[numeroPropiedad - 1];
+
+    let mensaje = "Información de la propiedad:\n\n";
+    mensaje += `Nombre: ${propiedadSeleccionada.nombre}\n`;
+    mensaje += `Ubicación: ${propiedadSeleccionada.ubicacion}\n`;
+    mensaje += `Descripción: ${propiedadSeleccionada.descripcion}\n`;
+    mensaje += `Valor: ${propiedadSeleccionada.valor} dólares\n`;
+
+    alert(mensaje);
+  } else {
+    alert("Número de propiedad inválido. Por favor, ingrese un número válido del 1 al " + propiedades.length + ".");
+  }
+}
+ 
+// Buscar entre valores deseados
+
+function Buscador() {
+  let valorDeseado = parseInt(prompt("Ingrese el valor que busca para las propiedades"));
+
+  let propiedadesCercanas = propiedad.filter((propiedad) => propiedad.valor <= valorDeseado);
+
+  if (propiedadesCercanas.length > 0) {
+    let mensaje = "Propiedades con valor igual o menor a " + valorDeseado + " dólares:\n\n";
+    propiedadesCercanas.forEach((propiedad, index) => {
+      mensaje += `${index + 1}: ${propiedad.nombre} - Valor: ${propiedad.valor} dólares\n`;
+    });
+
+    alert(mensaje);
+  } else {
+    alert("No se encontraron propiedades con valor igual o menor al valor deseado.");
+  }
+}
+
+
+
+
+
+
 
 //Home - propiedades - INFORMACIÓN Y VALOR ACTUALIZADO
 
@@ -22,6 +99,8 @@ function pedirDatos() {
   }
 }
 
+
+
 function calcular() {
   // Solicitar el valor al usuario en pesos Argentinos
   let valorIngresado = prompt("Ingresa el valor de la propiedad en pesos Argentinos");
@@ -33,3 +112,6 @@ function calcular() {
   let mensaje = "El valor de la propiedad hoy es de: " + resultado + " Pesos Argentinos.";
   alert(mensaje);
 }
+
+
+
