@@ -1,11 +1,18 @@
 html {
   font-size: 62.5%;
+  
   /* 62.5% representa un 10px, 1em = 10px */
+
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
- 
+ .navbar{
+  justify-content:center;
+ }
+ .navbar-toggler {margin-right: 2%;}
+
   /*navegador general*/
+
   .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
     display:flex;
     align-items:center;
@@ -16,15 +23,8 @@ html {
     color: white;
    
   }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-    width: 8%;;
-   
-  }
-
-
+ 
+  /*Generales*/
 .encabezado { 
    font-size: 2rem; 
    text-align: center;
@@ -132,27 +132,45 @@ body
 .texto  {
   font-size: 2.8rem;
   line-height:2 ;
-  justify-content:space-between;
   text-align:center;
   font-family: 'Abel', sans-serif;
   color:white;
-  margin-top: 10%;
 }
 
-.container-propiedad {
-overflow: hidden;
-margin:3%;
-padding:1%;
+.container-propiedad { 
+  overflow: hidden;
+  padding: 1%;
+  margin: 1%;
+  margin-top: 2%;
+
 }
 /*Quienes somos*/
 
 .somos {
-  position: absolute;
-  right: 0;
-  max-width: 50%;
-
+  position: relative; /* Agrego posición relativa para que el pseudo-elemento sea posicionado con respecto a este contenedor */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
+
+.somos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../Assets/soy.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  opacity: 0.2; 
+  z-index: -1; 
+}
+
+
 /*formulario*/
+
 .cont {
   display: flex;
   flex-direction: column;
@@ -177,7 +195,7 @@ label {
 
 .start {
   padding-top: 2%;
-  margin-left: 5%;
+  margin-left: 2%;
   color: white;
   text-align: start;
 }
@@ -210,12 +228,16 @@ textarea:focus {
   background-color: rgb(95, 4, 19);
 }
 
+/*Nuestras propiedades*/
+.tt{ border-radius: 5% 5%;}
 
 /* Estilos generales */
 
 /* Estilos para dispositivos móviles (ancho máximo de 767px) */
 
 @media (max-width: 767px) {
+/*Generales*/
+
   .encabezado {
     font-size: 2rem;
   }
@@ -227,20 +249,10 @@ textarea:focus {
   .slogan {
     font-size: 1.2rem;
   }
+
   
-  .somos { 
-    margin-top:-48%;
-    
-  }
+  /*Home*/
   .buscador, .consultar-btn, .calcular{ width:50%;}
-
-/*imagenes de galeria home*/
-.mono,
-.poso,
-.chalet,
-.casa,
-.ancha { display:flex; width: 490px; height: 470px;}
-
   .logo-container { width:70px;}
   .start {margin-right: 2%;}
   .texto {
@@ -249,9 +261,7 @@ textarea:focus {
   }
 }
 
-
 /* Estilos generales */
-
 /* Estilos para dispositivos móviles (ancho máximo de 767px) */
 
 @media (min-width: 767px) {
@@ -271,21 +281,11 @@ textarea:focus {
     flex-direction: column;
     overflow: hidden;
   }
-  .somos { 
-    margin-top:-48%;
-    
-  }
 
   .buscador, .consultar-btn, .calcular{ width:50%;}
 
-/*imagenes de galeria home*/
-.mono,
-.poso,
-.chalet,
-.casa,
-.ancha { display:flex; width: 490px; height: 470px;}
-
   .logo-container { width:60px;}
+
   .start {margin-right: 2%;}
 
   .texto {
@@ -295,21 +295,49 @@ textarea:focus {
 }
 
   @media (min-width: 1023px) {
-    
-    .collage-item {
-     
-      padding: 25px;
-      margin: -10px;
-
+    .encabezado {
+      font-size: 3rem;
     }
-
-    /*imagenes de galeria home*/
-.mono,
-.poso,
-.chalet,
-.casa,
-.ancha 
-{ display:flex; width: 800px; height: 570px;
-}
+  
+    .titulo {
+      font-size: 3rem;
+    }
+  
+    .slogan {
+      font-size: 2rem;
+    }
+   .texto {font-size: 1.5rem;}
   }
+
+
+
+  @media (min-width: 1420px) {  .encabezado {
+    font-size: 4rem;
+  }
+
+  .titulo {
+    font-size: 4rem;
+  }
+
+  .slogan {
+    font-size: 3rem;
+  }
+
+  /* Nuestras propiedades*/
+
+ .texto {font-size: 2.8rem;}
+ .tt { width: 100%; height: 1280px; margin-top: 4%;}
+
+ .container-propiedad { 
+  overflow: hidden;
+  padding: 2%;
+  margin: 2%;
+  margin-top: 3%;
+
+}
+
+/*home imagenes*/
+.prope {width: 100%;}
+ 
+}
 

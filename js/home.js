@@ -36,7 +36,7 @@ function pedirDatos() {
 
   // Verificar si el número de propiedad ingresado es válido
 
-  if (numeroPropiedad >= 1 && numeroPropiedad <= propiedad.length) {
+  if (numeroPropiedad >= 1 && numeroPropiedad <= propiedad.forEach) {
     let propiedadSeleccionada = propiedad[numeroPropiedad - 1];
 
     let mensaje = "Información de la propiedad:\n\n";
@@ -47,7 +47,7 @@ function pedirDatos() {
 
     alert(mensaje);
   } else {
-    alert("Número de propiedad inválido. Por favor, ingrese un número válido del 1 al " + propiedades.length + ".");
+    alert("Número de propiedad inválido. Por favor, ingrese un número válido del 1 al " + propiedades.forEach + ".");
   }
 }
  
@@ -69,11 +69,6 @@ function Buscador() {
     alert("No se encontraron propiedades con valor igual o menor al valor deseado.");
   }
 }
-
-
-
-
-
 
 
 //Home - propiedades - INFORMACIÓN Y VALOR ACTUALIZADO
