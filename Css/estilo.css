@@ -6,31 +6,28 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
- .navbar{
-  justify-content:center;
- }
- .navbar-toggler {margin-right: 2%;}
+
+.navbar-toggler {margin-right: 2%;}
 
   /*navegador general*/
 
-  .navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size: 1.2rem;
+.navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
+    font-size: 2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     color: white;
-   
+
   }
- 
-  /*Generales*/
+
+.logo-container { width: 15%;}
+
+/*Generales*/
 .encabezado { 
-   font-size: 2rem; 
-   text-align: center;
-   color:white;
-   margin-top: 1%;
- }
+font-size: 2rem; 
+text-align: center;
+color:white;
+margin-top: 1%;
+}
 
 .titulo { color:rgb(104, 4, 4);
   font-size: 2rem;
@@ -40,13 +37,14 @@ html {
   text-align: center;
   font-size: 1.3rem;
   color:white;
- 
+
 }
+/*HOme*/
 .collage-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1px; /* Espacio entre las imágenes */
+  gap: 1px; 
   padding: 1rem 0;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -54,17 +52,15 @@ html {
 
 .collage-item {
   position: relative;
-  width: 640px; 
-  height: 427px; 
   overflow: hidden;
 }
 
 .prope {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   transition: transform 0.3s ease;
-  object-fit: cover;
+  object-fit: cover; /*la imagen se ajuste sin desbordar */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   overflow: hidden;
   margin-top: 5%;
@@ -79,7 +75,6 @@ html {
   width: 100%;
   bottom: 0;
   left: 0;
-  right: 0;
   padding: 0.5rem 1rem; 
   background-color: rgba(0, 0, 0, 0.7);
   color: #fee9e9;
@@ -95,7 +90,6 @@ html {
   opacity: 1;
 }
 
-
 /* Estilos para el botonn de consulta */
 
 .consultar-btn, 
@@ -108,9 +102,9 @@ html {
   border-radius: 90px;
   cursor: pointer;
   margin-right: 5px;
- 
-}
+  font-size: 1.5rem;
 
+}
 .buscador:hover {background-color: #930d0d;color:white;}
 .calcular:hover{background-color: #930d0d;color:white;}
 .consultar-btn:hover {background-color: #930d0d;color:white;}
@@ -118,10 +112,10 @@ html {
 /* Estilos para el contenedor flexible */
 
 .flex-container {
-  display:flex;
-  margin-top: 3%; 
-  
+display:flex;
 }
+
+/**/
 
 body 
 {background-color: rgb(15, 10, 10);}
@@ -168,34 +162,31 @@ body
   z-index: -1; 
 }
 
-
 /*formulario*/
 
 .cont {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: min-content;
+  width: max-content;
   height: auto;
   font-size: 1rem;
-  padding-left: 2%;
   color: white;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 100%;
 }
 
 label {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 }
 
 .start {
   padding-top: 2%;
-  margin-left: 2%;
   color: white;
   text-align: start;
 }
@@ -206,7 +197,7 @@ textarea {
   padding: 0.8rem;
   border: 1px solid;
   color: black;
-  width: 180%;
+  width: 220%;
 }
 
 input:focus,
@@ -216,12 +207,13 @@ textarea:focus {
 }
 
 .button-enviar {
-  margin-top: 19px;
+  margin-top: 50px;
   border-radius: 1rem;
   padding: 0.5rem;
   color: rgb(172, 0, 0);
   border: none;
   cursor: pointer;
+  font-size: 1.7rem;
 }
 
 .button-enviar:hover {
@@ -229,13 +221,13 @@ textarea:focus {
 }
 
 /*Nuestras propiedades*/
-.tt{ border-radius: 5% 5%;}
 
-/* Estilos generales */
+.tt{ border-radius: 5% 5%;}
 
 /* Estilos para dispositivos móviles (ancho máximo de 767px) */
 
 @media (max-width: 767px) {
+
 /*Generales*/
 
   .encabezado {
@@ -250,21 +242,29 @@ textarea:focus {
     font-size: 1.2rem;
   }
 
-  
-  /*Home*/
-  .buscador, .consultar-btn, .calcular{ width:50%;}
-  .logo-container { width:70px;}
-  .start {margin-right: 2%;}
-  .texto {
-    font-size:1rem;
-    overflow: hidden;
+/*Home*/
+
+.logo-container{
+width: 90px;margin-right: 9%;}
+
+.navbar.bg-body-tertiary .nav-link.active, .navbar.bg-body-tertiary .navbar-brand, .navbar.bg-body-tertiary .navbar-brand.navbar-nav, .navbar.bg-body-tertiary .nav-link {
+font-size: 1.6rem;}
+
+.buscador, .consultar-btn, .calcular
+{ width:auto; margin-top: 3px;font-size: 1rem;}
+
+.start {margin-right: 0%;}
+
+.texto {
+font-size:1rem;
+overflow: hidden;
   }
 }
 
-/* Estilos generales */
 /* Estilos para dispositivos móviles (ancho máximo de 767px) */
 
 @media (min-width: 767px) {
+
   .encabezado {
     font-size: 2rem;
   }
@@ -282,19 +282,16 @@ textarea:focus {
     overflow: hidden;
   }
 
-  .buscador, .consultar-btn, .calcular{ width:50%;}
-
-  .logo-container { width:60px;}
-
-  .start {margin-right: 2%;}
+  .logo-container{width: 100px;}
 
   .texto {
     font-size:1rem;
     overflow: hidden;
   }
+
 }
 
-  @media (min-width: 1023px) {
+@media (min-width: 1023px) {
     .encabezado {
       font-size: 3rem;
     }
@@ -306,12 +303,17 @@ textarea:focus {
     .slogan {
       font-size: 2rem;
     }
-   .texto {font-size: 1.5rem;}
+  .texto {font-size: 1.5rem;}
+  
+  .logo-container{width: 120px; margin-left: 3%;}
+
+  .buscador, .consultar-btn, .calcular{ width:130px; margin-top: 3px;}
+
   }
 
+  @media (min-width: 1420px) {  
 
-
-  @media (min-width: 1420px) {  .encabezado {
+  .encabezado {
     font-size: 4rem;
   }
 
@@ -325,19 +327,35 @@ textarea:focus {
 
   /* Nuestras propiedades*/
 
- .texto {font-size: 2.8rem;}
- .tt { width: 100%; height: 1280px; margin-top: 4%;}
+.texto {font-size: 2.3rem;}
 
- .container-propiedad { 
+.tt { width: 100%; height: 900px; margin-top: 4%;}
+
+.container-propiedad { 
   overflow: hidden;
   padding: 2%;
   margin: 2%;
   margin-top: 3%;
-
 }
-
-/*home imagenes*/
-.prope {width: 100%;}
- 
+/*Home*/
+.collage-wrapper {
+  display: flex;
+  justify-content: center;
 }
-
+.collage-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px; 
+}
+.prope {
+  width: 100%; 
+  max-height: 300px; 
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: 5%;
+  margin-bottom: 5%; 
+}
+}

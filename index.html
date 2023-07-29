@@ -34,24 +34,24 @@
             <img src="./Assets/logo.png" alt="logo" class="logo-container">
         </div>
 
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse navbar-nav justify-content-between align-items-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="./Pages/Quienessomos.html">Quienes somos</a>
-              <a class="nav-link" href="./Pages/Nuestraspropiedades.html">Nuestras propiedades</a>
+              <a class="nav-link active navbar-nav justify-content-between align-items-center " aria-current="page" href="index.html">Home</a>
+              <a class="nav-link navbar-nav justify-content-between align-items-center" href="./Pages/Quienessomos.html">Quienes somos</a>
+              <a class="nav-link navbar-nav justify-content-between align-items-center" href="./Pages/Nuestraspropiedades.html">Nuestras propiedades</a>
             </div>
           </div>
 
-          <div class="flex-container">
+          <div class="flex-container justify-content-between align-items-center">
 
             <!--Buscador-->
-            <button class="buscador" onclick="Buscador()">Buscar por un valor deseado</button>
+            <button class="buscador justify-content-between align-items-center" onclick="Buscador()">Buscar por un valor deseado</button>
 
             <!-- botón para llamar a la función pedirDatos() -->
-            <button class="consultar-btn" onclick="pedirDatos()">Consultar Propiedad</button>
+            <button class="consultar-btn justify-content-between align-items-center" onclick="pedirDatos()">Consultar Propiedad</button>
 
             <!--Calcular valor a dolar actual en Argentina-->
-            <button class="calcular" onclick="calcular()">Calcular Valor a dolar actual</button>
+            <button class="calcular justify-content-between align-items-center" onclick="calcular()">Calcular Valor a dolar actual</button>
 
           </div>
 
@@ -88,43 +88,43 @@
   <p class="encabezado"> <span class="titulo">Bienes </span> raices </p>
 
   <h2 class="slogan"> En la busqueda permanente del mejor negocio para usted.</h2>
-
+  <div class="collage-wrapper">
     <div class="collage-container">
       
-      <div class="collage-item col-md-6  col-xs-12 col-md-9 col-md-push-3 rightmargin ">
-        <img src="Assets/poso.jpg" class="prope" alt="Departamento al poso">
+      <div class="collage-item col-md-6  col-xs-12 col-md-9 col-md-push-3 rightmargin text-center">
+        <img src="Assets/poso.jpg" class="prope" class="img-responsive"  alt="Departamento al poso">
         <div class="shadow-text">
           <p>1 Departamentos al poso</p>
           <a href="./Pages/Nuestraspropiedades.html">Mas información</a>
         </div>
       </div>
 
-      <div class="collage-item col-md-6  ">
-        <img src="Assets/chalet.jpg" class="prope" alt="Chalet">
+      <div class="collage-item col-md-6 collage-item col-md-6  col-xs-12 col-md-9 col-md-push-3 rightmargin text-center ">
+        <img src="Assets/chalet.jpg" class="prope" class="img-responsive"  alt="Chalet">
         <div class="shadow-text">
           <p>2 Chalet zona céntrica</p>
           <a href="./Pages/Nuestraspropiedades.html">Mas información</a>
         </div>
       </div>
 
-      <div class="collage-item col-md-6 ">
-        <img src="Assets/monoambiente.jpg" class="prope" alt="Monoambiente">
+      <div class="collage-item col-md-6 collage-item col-md-6  col-xs-12 col-md-9 col-md-push-3 rightmargin text-center">
+        <img src="Assets/monoambiente.jpg" class="prope" class="img-responsive"  alt="Monoambiente">
         <div class="shadow-text">
           <p>3 Monoambiente amueblado</p>
           <a href="./Pages/Nuestraspropiedades.html">Mas información</a>
         </div>
       </div>
 
-      <div class="collage-item col-md-6">
-        <img src="Assets/casa.jpg" class="prope" alt="Casa">
+      <div class="collage-item col-md-6 collage-item col-md-6  col-xs-12 col-md-9 col-md-push-3 rightmargin text-center">
+        <img src="Assets/casa.jpg" class="prope"class="img-responsive"  alt="Casa">
         <div class="shadow-text">
           <p>4 Casa en villa floresta</p>
           <a href="./Pages/Nuestraspropiedades.html">Mas información</a>
         </div>
       </div>
 
-      <div class="collage-item col-md-6 ">
-        <img src="Assets/local.jpg" class="prope" alt="Local">
+      <div class="collage-item col-md-6 collage-item col-md-6  col-xs-12 col-md-9 col-md-push-3 rightmargin text-center">
+        <img src="Assets/local.jpg" class="prope" class="img-responsive" alt="Local">
         <div class="shadow-text">
           <p>5 Local céntrico</p>
           <a href="./Pages/Nuestraspropiedades.html">Mas información</a>
@@ -132,7 +132,7 @@
       </div>
 
     </div>
-
+  </div> 
   <footer> banner </footer>
 
   <script src="./js/home.js"> </script>
