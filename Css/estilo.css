@@ -19,7 +19,12 @@ html {
 
   }
 
-.logo-container { width: 15%;}
+.logo-container { width: 15%; margin-left: 15%;}
+
+/*menu aun sin uso*/
+.dropdown-menu,
+.dropdown-item
+{width: 300px;}
 
 /*Generales*/
 .encabezado { 
@@ -39,7 +44,7 @@ margin-top: 1%;
   color:white;
 
 }
-/*HOme*/
+/*Home*/
 .collage-container {
   display: flex;
   justify-content: space-evenly;
