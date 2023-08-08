@@ -4,35 +4,42 @@ let propiedades = [
 
   {
     nombre: "Departamento al pozo",
+    Barrio:"Centro",
     ubicacion: "Vte Lopez al 1200",
     descripcion: "Cinco ambientes en 100mt2 cubiertos.",
     valor: 85000,
   },
   {
     nombre: "Chalet ubicado en el centro de la ciudad",
-    ubicacion: "Centro",
+    Barrio: "centro",
+    ubicacion: "Rivadavia 2390",
     descripcion: "120mt2 cubiertos.",
     valor: 120000,
   },
   {
     nombre: "Monoambiente totalmente amueblado",
-    ubicacion: "Mariano Moreno",
+    Barrio:"Mariano Moreno",
+    ubicacion: "velez sarfield 3100",
     descripcion: "Zona Mariano moreno.",
     valor: 89000,
   },
   {
-    nombre: "Casa Ubicada en barrio villa floresta",
-    ubicacion: "Villa Floresta",
+    nombre: "Casa amplia en importante punto de la ciudad",
+    Barrio:"Villa floresta",
+    ubicacion: "lamadrid 2020",
     descripcion: "40mt2.",
     valor: 70000,
   },
   {
     nombre: "Local centrico, excelente punto de la ciudad",
-    ubicacion: "Centro",
+    Barrio:"Centro",
+    ubicacion: "Rivadavia 2020",
     descripcion: "40mt2.",
     valor: 35000,
   },
 ];
+
+
 
 // Función para mostrar información de una propiedad específica
 
@@ -53,6 +60,7 @@ function pedirDatos() {
     alert("Número de propiedad inválido. Por favor, ingrese un número válido del 1 al " + propiedades.length + ".");
   }
 }
+
 
 function Buscador() {
   let seguirBuscando = true;
@@ -84,9 +92,11 @@ function Buscador() {
 // Función para calcular el valor en pesos argentinos
 
 function calcular() {
-  let valorIngresado = prompt("Ingresa el valor de la propiedad en pesos Argentinos");
-  let factor = 550;
+  let valorIngresado = prompt("Ingresa el valor de la propiedad en dolares");
+  let factor = 595;
   let resultado = valorIngresado * factor;
   let mensaje = "El valor de la propiedad hoy es de: " + resultado + " Pesos Argentinos.";
   alert(mensaje);
 }
+
+
