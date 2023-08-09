@@ -1,5 +1,22 @@
- 
- let = parseInt(prompt("Esta interesado en vender o comprar? Dejenos un número de celular"));
- alert = alert("Pronto nos estaremos contactando, muchas gracias por su visita!");
 
 
+// COLORES CON TARGET
+
+let formulario = document.getElementById("formulario");
+
+
+formulario.addEventListener("submit", (e) => {
+
+e.preventDefault();
+
+let inputs = e.target.children;
+
+if (!inputs[1].value.includes("@")) {
+
+    inputs[1].value = "";
+
+    alert("Debe ser un correo")
+
+}
+
+});

@@ -39,8 +39,6 @@ let propiedades = [
   },
 ];
 
-
-
 // Función para mostrar información de una propiedad específica
 
 function pedirDatos() {
@@ -61,6 +59,7 @@ function pedirDatos() {
   }
 }
 
+// BUSCAR POR VALORES 
 
 function Buscador() {
   let seguirBuscando = true;
@@ -82,6 +81,7 @@ function Buscador() {
     }
 
     // Preguntar al usuario si desea continuar buscando
+
     let respuesta = prompt("¿Desea seguir buscando propiedades? (responda 'si' o 'no')");
     if (respuesta.toLowerCase() !== 'si') {
       seguirBuscando = false; // Salir del bucle si el usuario responde 'no'
@@ -100,3 +100,12 @@ function calcular() {
 }
 
 
+//colorcitos
+
+function cambiarColor(elemento) {
+  elemento.classList.add("color-mouseover");
+}
+
+function restaurarColor(elemento) {
+  elemento.classList.remove("color-mouseover");
+}
